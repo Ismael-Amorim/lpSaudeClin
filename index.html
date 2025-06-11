@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Clin - Clínica Geral e Fisioterapia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo-saudeclin.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="logo-saudeclin.png" alt="Logo Saúde Clin" class="logo">
+            <h1>Saúde Clin | Clínica Geral e Fisioterapia</h1>
+        </div>
+    </header>
+    <section class="hero-top">
+        <div class="hero-content">
+            <h4>ESPECIALISTAS EM</h4>
+            <h1>REABILITAÇÃO, ALÍVIO DA DOR<br>E MOVIMENTO FUNCIONAL</h1>
+            <p>+25 anos de experiência cuidando da sua saúde com excelência</p>
+            <a href="https://wa.me/4333228814" target="_blank" class="btn-whatsapp">
+                <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" width="20">
+                Agendar uma Consulta
+            </a>
+        </div>
+    </section>
+
+    <!-- Hero / Chamada para ação -->
+    <section class="hero">
+        <div class="cta">
+            <h2>Especialistas em reabilitação, alívio da dor e movimento funcional</h2>
+            <p>💙 Cuidamos do seu bem-estar<br>
+                🏆 +25 anos de experiência</p>
+            <a href="https://wa.me/4333228814" class="btn">Agende pelo WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="sobre">
+        <div class="container">
+            <img src="logo-saudeclin com fundo.png" alt="Foto da Clínica">
+            <div>
+                <h2>Sobre a Saúde Clin | Clínica Geral e Fisioterapia</h2>
+                <p>Com mais de 25 anos de experiência, a Saúde Clin é referência em cuidados de saúde e reabilitação.
+                    Nossa missão é promover qualidade de vida por meio de tratamentos personalizados e eficazes, com uma
+                    equipe especializada em movimento funcional e alívio da dor.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre-clin">
+        <div class="texto">
+            <h2>Sobre a Saúde Clin <br> Clínica Geral e Fisioterapia</h2>
+            <p>
+                Com mais de 25 anos de experiência, a Saúde Clin é referência em cuidados de saúde e reabilitação.
+                Nossa missão é promover qualidade de vida por meio de tratamentos personalizados e eficazes, com uma
+                equipe especializada em movimento funcional e alívio da dor.
+            </p>
+        </div>
+        <div class="logo">
+            <img src="logo-saudeclin com fundo.png" alt="Logo Saúde Clin">
+        </div>
+    </section>
+
+
+    <!-- Serviços -->
+    <section class="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="grid">
+            <div class="servico">
+                <img src="fisioterapia-ortopedica.jpg" alt="Fisioterapia Ortopédica">
+                <h3>Fisioterapia Ortopédica</h3>
+                <p>Tratamentos voltados para recuperação de lesões musculares e articulares, dores lombares, hérnias e
+                    muito mais.</p>
+            </div>
+            <div class="servico">
+                <img src="fisioterapia-postural.png" alt="Reeducação Postural">
+                <h3>Reeducação Postural</h3>
+                <p>Melhore sua postura, previna dores e promova o alinhamento corporal com nossos especialistas.</p>
+            </div>
+            <div class="servico">
+                <img src="clinica-geral.png" alt="Consulta Clínica Geral">
+                <h3>Clínica Geral</h3>
+                <p>Atendimento humanizado com avaliação completa e encaminhamentos para tratamentos personalizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="depoimentos">
+        <h2>O que nossos pacientes dizem:</h2>
+        <div class="carrossel">
+            <div class="slide active">“Profissionais incríveis! Minha dor lombar desapareceu após algumas sessões.” –
+                João M.</div>
+            <div class="slide">“Ambiente acolhedor e atendimento de excelência. Recomendo muito!” – Ana C.</div>
+            <div class="slide">“Equipe dedicada e tratamento eficaz. Voltei a caminhar sem dores.” – Carlos S.</div>
+        </div>
+    </section>
+
+    <!-- Chamada Final -->
+    <section class="cta-final">
+        <h2>Vamos cuidar da sua saúde?</h2>
+        <a href="https://wa.me/4333228814" class="btn">Agende agora pelo WhatsApp</a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Desenvolvido por Amorim Systems</p>
+    </footer>
+
+    <script>
+        let current = 0;
+        const slides = document.querySelectorAll(".slide");
+        setInterval(() => {
+            slides[current].classList.remove("active");
+            current = (current + 1) % slides.length;
+            slides[current].classList.add("active");
+        }, 4000);
+    </script>
+</body>
+
+</html>
