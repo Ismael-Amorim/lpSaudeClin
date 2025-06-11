@@ -33,6 +33,7 @@ body {
     color: var(--branco);
     padding: 20px 0;
     text-align: center;
+    width: 100%;
 }
 
 .header {
